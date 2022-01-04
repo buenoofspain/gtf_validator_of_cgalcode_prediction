@@ -1,0 +1,3 @@
+# Commande lancée pour l'humain le 04/10/21 : 
+niguilla@raptor:~/Documents/Software/gtf_validator_of_cgalcode_prediction/test_jonction_transcripto_compara$ ./../bin/run_multi_junction_alignment_samuel.sh hs jonc_hs.bed 
+
