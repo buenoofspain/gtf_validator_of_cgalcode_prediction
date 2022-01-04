@@ -1,0 +1,48 @@
+####################################################################
+### ANALYSE DES DONNEES DES 83 GENES AYANT UNE STRUCTURE COMMUNE ###
+####################################################################
+
+>>> Fichiers nécessaires à l'analyse :
+- EXPORT_HSMM.txt : contient la sortie de CG-Alcode de la comparaison humain-souris
+- EXPORT_HSCLF.txt : contient la sortie de CG-Alcode de la comparaison humain-chien
+- EXPORT_MMCLF.txt : contient la sortie de CG-Alcode de la comparaison souris-chien
+- graph_analysis.csv : tableau comportant le détail de la répartition des sites délimiteurs de séquences au sein des graphes de relations d'orthologie entre les sites fonctionnels.
+- clique.txt : nom des gènes humains ayant des clique3 au sein des graphes
+- doublons.txt : nom des gènes humains ayant des doublons au sein des graphes
+- singletons.txt : nom des gènes humains ayant des singletons au sein des graphes
+- output_dictionaries.txt : dictionnaires comportant la répartition des sites fonctionnels et leurs liens orthologiques entre les trois espèces
+- corresponding_tr_otr.txt : fichier comportant le lien lien entre un transcrit d'une espèce A avec le transcrit d'une espèce B. Il conditionne si il est "Found", "Found-CN", "Yet-to-be-found", "Yet-to-be-found-CN" ou "No-executable. Dans le cas du run2 (avec import des prédictions de transcrits, seuls les "Found" et les "Found-CN" ont un intérêt particulier.
+
+0) Supplément : Pour séparer le fichier de sortie de CG-Alcode contenant les trois comparaisons regroupées, on peut utiliser le script "spli_output_CG-Alcode.py". Il donnera les fichiers : EXPORT_HSMM.txt EXPORT_HSCLF.txt EXPORT_MMCLF.txt. Exemple de ligne de commande où output_run2.txt est la sortie du programme CG-Alcode après importation des prédictions de transcrits : 
+
+    >>>> $ python split_output_CG-Alcode.py -o output_run2.txt.
+
+1) Pour sortir le tableau descriptif ("cliques_common.csv"), faire tourner le script "genes_triplet_with_same_intron_delimitor_table_FINAL.py". Ce script utilise deux autres script : 
+
+1.A) Script 1 : Le script "extract_corresponding_genes_triplets.py" permet d'obtenir le tableau "output_common_comparison.csv" contenant les triplets de gènes ayant un modèle structural commun  basé sur les modèles GO (Gene Oracle cf. CG-Alcode) et le tableau "output_one_letter_difference_comparison.csv" contenant les triplets de gènes ayant un seul bloc de différent parmi l'ensemble des modèles structuraux basé sur les modèles GO. Indépendemment, il s'exécute à partir des sorties de CG-Alcode (après import des prédictions) pour chaque comparaison (hs-mm, hs-clf, mm-clf). Une correction a été faite le 25/06/18 pour qu'il ne donne que le nombre de transcrits connus pour le gène d'une espèce. Notre script principal ne produira que le tableau "output_common_comparison.csv". Il s'exécute de la façon suivante : 
+
+    >>> $ python2 extract_corresponding_genes_triplets.py -a output_hs-mm.txt -b output_hs-clf.txt -c output_mm-clf.txt
+
+1.B) Script 2 : Suite à l'exécution du script "multi_orthology_compare.py" de CG-Alcode implémenter pendant le stage de Master 2 (janvier-juillet 2018), on obtient le tableau "graph_analysis.csv" contenant les triplets de gènes et le détail des signaux (ou sites délimiteurs de séquences tels que les donneurs et accepteurs d'épissage, les codons start et stop). Il produit aussi les fichiers "cliques.txt", "doublons.txt" et "singletons.txt". Le script "caracteristics.py" utilise ce tableau et génère une séparation de ce tableau selon chaque caractéristiques (triplets contennant uniquement des clique3 ("cliques_output.csv"), triplets contennant uniquement des doublons ("doublons_non_*_output.csv"), triplets contennat uniquement des singletons ("singletons_*_output.csv"). Dans notre cas, nous avons besoin uniquement du tableau "cliques_output.csv". Il s'exécute de la façon suivante : 
+
+    >>> $ python2 caracteristics.py -g graph_analysis.csv -c cliques.txt -d doublons.txt -s singletons.txt
+
+    # Notre script principal utilisera ainsi les fichiers "output_common_comparison.csv" et "cliques_output.csv"
+
+2) Pour réaliser l'analyse directement, exécuter la ligne de commande suivante :
+    >>> $ python2 genes_triplet_with_same_intron_delimitor_table_FINAL.py -o1 EXPORT_HSMM.txt -o2 EXPORT_HSCLF.txt -o3 EXPORT_MMCLF.txt -g graph_analysis.csv -c clique.txt -d doublons.txt -s singletons.txt -dd output_dictionaries.txt -tr corresponding_tr_otr.txt
+    
+    # Le tableau résultat obtenu pendant le stage et corrigé le 16/11/2018 suite à une erreur retrouvée est disponible sous le nom : cliques_common_final.csv
+    
+>>> Erreur possible : 
+-> Le script a besoin des fichiers transcripts_*_withprediction.csv qui sont générés et placés dans le dossier transcripts_with_prediction via le programme CG-Alcode. Si nécessaire, corrigé le chemin de ses fichiers à la ligne 92 : 
+    benchmark = "/home/Documents/genes_one2one_hs_mm_clf_with_at_least_2_CCDS/analyse-hs-mm-clf-2018-10-11/analysis_tr_graphs/transcripts_with_prediction"
+    
+>>> Indications supplémentaires :
+- Le signe * employé désigné l'espèce : hs, mm, ou clf respectivement pour Homo sapiens, Mus musculus et Canis lupus familiaris.
+
+######################################
+### set_83_gènes_conservés_HsMmClf ###
+######################################
+
+# Le tableau "cliques_details_82.csv" n'a pas été conclu, il contient les coordonnées des events dans le modèle grammatical commun aux trois espèces pour chaque gène et les différents modèles de transcrits avec le nom du gène et du transcrits associés (pour le moment CGA* = transcrits prédits à partir d'une autre espèce). Pour ouvrir le document : utilisé la virgule "," comme séparateur.

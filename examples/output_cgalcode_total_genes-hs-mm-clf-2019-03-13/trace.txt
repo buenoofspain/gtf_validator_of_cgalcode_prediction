@@ -1,0 +1,37 @@
+niguilla@raptor:~/Documents/these_nguillaudeux/Data/genes_one2one_hs_mm_clf_with_at_least_2_CCDS$ ./run_multi_orthology_compare_total_genes.sh 0_total_genes_exact_without_cn_prediction
+Start multi-compare programm (STEP1):
+2019-03-13 11:10:34
+Number of transcripts exported: 
+7777
+Number of human transcripts exported: 
+1604
+Number of mouse transcripts exported: 
+2216
+Number of dog transcripts exported: 
+3957
+FUSION
+End STEP1
+2019-03-13 12:44:06
+Start multi-compare programm (STEP2):
+2019-03-13 12:44:06
+End STEP2
+2019-03-13 14:17:57
+Start multi-compare programm (STEP3):
+2019-03-13 14:17:57
+End STEP3
+2019-03-13 15:24:44
+Start multi-compare programm (STEP4):
+2019-03-13 15:24:44
+End STEP4
+2019-03-13 15:44:30
+Start multi-compare programm (STEP5):
+2019-03-13 15:44:30
+End STEP5
+2019-03-13 15:44:42
+Start Venn diagramm generator (STEP6):
+2019-03-13 15:44:42
+End STEP6
+2019-03-13 15:44:45
+End programm
+2019-03-13 15:44:45
+
