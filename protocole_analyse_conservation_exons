@@ -1,0 +1,82 @@
+# Etude de la conservation des tailles des exons : cas sur le groupe de gènes reliés au gène "ENSG00000130202" du groupe des 135 gènes structurellement conservés
+
+## Etape 1 : récupérer le numéro de groupe orthologue :
+
+mysql> SELECT idGene, sourceGId, groupGId FROM gene, orthoGene WHERE gene.sourceGId="ENSG00000130202" AND orthoGene.sourceGId=gene.sourceGId;
+ERROR 1052 (23000): Column 'sourceGId' in field list is ambiguous
+mysql> SELECT * FROM gene, orthoGEne, groupOrthoG FROM groupOrthoG, orthoGene, gene WHERE groupOrthoG.groupGId=orthoGene.groupGId AND orthoGene.sourceGId=gene.sourceGId AND gene.sourceGId="ENSG00000130202";
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM groupOrthoG, orthoGene, gene WHERE groupOrthoG.groupGId=orthoGene.groupGId ' at line 1
+mysql> SELECT * FROM groupOrthoG, orthoGene, gene WHERE groupOrthoG.groupGId=orthoGene.groupGId AND orthoGene.sourceGId=gene.sourceGId AND gene.sourceGId="ENSG00000130202";
++----------+--------+----------+-----------------+--------+-----------------+-----------+------------+----------+----------+--------+----------+
+| groupGId | opggnb | groupGId | sourceGId       | idGene | sourceGId       | idSpecies | chromosome | posStart | posEnd   | strand | geneName |
++----------+--------+----------+-----------------+--------+-----------------+-----------+------------+----------+----------+--------+----------+
+|      285 |    285 |      285 | ENSG00000130202 |      6 | ENSG00000130202 |         1 | 19         | 44846175 | 44889228 | +      | NA       |
++----------+--------+----------+-----------------+--------+-----------------+-----------+------------+----------+----------+--------+----------+
+1 row in set (0.00 sec)
+
+# Etape 2 : Récupérer les correspondance entre les transcrits de ce groupe :
+
+mysql> SELECT DISTINCT * FROM pairTOrtho WHERE pairTOrtho.groupGId="285";
++------------------------+------------------------+----------+
+| transcriptSource       | transcriptTarget       | groupGId |
++------------------------+------------------------+----------+
+| ENST00000252485        | ENSMUST00000108450     |      285 |
+| ENST00000252483        | ENSMUST00000075447     |      285 |
+| ENSMUST00000075447     | ENST00000252483        |      285 |
+| ENSMUST00000108450     | ENST00000252485        |      285 |
+| ENST00000252485        | CGACAFTENST00000252485 |      285 |
+| ENST00000252483        | ENSCAFT00000007452     |      285 |
+| ENSCAFT00000007452     | ENST00000252483        |      285 |
+| CGACAFTENST00000252485 | ENST00000252485        |      285 |
+| ENSMUST00000075447     | ENSCAFT00000007452     |      285 |
+| ENSMUST00000108450     | CGACAFTENST00000252485 |      285 |
+| ENSCAFT00000007452     | ENSMUST00000075447     |      285 |
+| CGACAFTENST00000252485 | ENSMUST00000108450     |      285 |
++------------------------+------------------------+----------+
+12 rows in set (0.01 sec)
+
+# Etape 3 : récupérer la liste des transcrits associés
+
+mysql> SELECT DISTINCT transcriptSource FROM pairTOrtho WHERE pairTOrtho.groupGId="285"
+    -> ;
++------------------------+
+| transcriptSource       |
++------------------------+
+| ENST00000252485        |
+| ENST00000252483        |
+| ENSMUST00000075447     |
+| ENSMUST00000108450     |
+| ENSCAFT00000007452     |
+| CGACAFTENST00000252485 |
++------------------------+
+6 rows in set (0.01 sec)
+
+# Etape 4 : récupérer le nombre d'exons associés à ce groupe :
+
+mysql> SELECT * FROM transcript WHERE transcript.sourceTId="ENST00000252485" OR transcript.sourceTId="ENST00000252483" OR transcript.sourceTId="ENSMUST00000075447" OR transcript.sourceTId="ENSMUST00000108450" OR transcript.sourceTId="ENSCAFT00000007452" OR transcript.sourceTId="CGACAFTENST00000252485";
++--------------+------------------------+-----------+-----------+--------+----------------------+-------------------+-----------+
+| idTranscript | sourceTId              | posStart  | posEnd    | nbExon | transcriptName       | transcriptBiotype | state     |
++--------------+------------------------+-----------+-----------+--------+----------------------+-------------------+-----------+
+|           21 | ENST00000252485        |  44846175 |  44878941 |      6 | NECTIN2-202          | protein_coding    | known     |
+|           22 | ENST00000252483        |  44846526 |  44889228 |      9 | NECTIN2-201          | protein_coding    | known     |
+|         1583 | ENSMUST00000075447     |  19716644 |  19749573 |      9 | Nectin2-201          | protein_coding    | known     |
+|         1584 | ENSMUST00000108450     |  19724161 |  19749533 |      6 | Nectin2-202          | protein_coding    | known     |
+|         2982 | ENSCAFT00000007452     | 110542524 | 110569200 |      9 | NECTIN2-201          | protein_coding    | known     |
+|         2983 | CGACAFTENST00000252485 | 110550175 | 110568957 |      6 | From_ENST00000252485 | protein_coding    | predicted |
++--------------+------------------------+-----------+-----------+--------+----------------------+-------------------+-----------+
+6 rows in set (0.00 sec)
+
+# Etape 5 : Etude sur les transcrits du groupe avec 6 exons :
+
+mysql> SELECT * FROM transcript WHERE (transcript.sourceTId="ENST00000252485" OR transcript.sourceTId="ENST00000252483" OR transcript.sourceTId="ENSMUST00000075447" OR transcript.sourceTId="ENSMUST00000108450" OR transcript.sourceTId="ENSCAFT00000007452" OR transcript.sourceTId="CGACAFTENST00000252485") AND transcript.nbExon="6";
++--------------+------------------------+-----------+-----------+--------+----------------------+-------------------+-----------+
+| idTranscript | sourceTId              | posStart  | posEnd    | nbExon | transcriptName       | transcriptBiotype | state     |
++--------------+------------------------+-----------+-----------+--------+----------------------+-------------------+-----------+
+|           21 | ENST00000252485        |  44846175 |  44878941 |      6 | NECTIN2-202          | protein_coding    | known     |
+|         1584 | ENSMUST00000108450     |  19724161 |  19749533 |      6 | Nectin2-202          | protein_coding    | known     |
+|         2983 | CGACAFTENST00000252485 | 110550175 | 110568957 |      6 | From_ENST00000252485 | protein_coding    | predicted |
++--------------+------------------------+-----------+-----------+--------+----------------------+-------------------+-----------+
+3 rows in set (0.00 sec)
+
+
+
