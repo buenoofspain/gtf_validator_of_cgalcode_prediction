@@ -1,0 +1,1 @@
+Penser à modifier "chrX" en "X" avec sed -i "s/chr//g" file
