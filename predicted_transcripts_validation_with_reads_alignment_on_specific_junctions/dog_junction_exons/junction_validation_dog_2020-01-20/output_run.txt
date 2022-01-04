@@ -1,0 +1,4 @@
+>>>EXTRACT SPECIFIC EXON COUPLES
+Number of transcripts: 175
+Number of exon junctions: 1684
+Number of specific exon junctions traited: 245 / 245

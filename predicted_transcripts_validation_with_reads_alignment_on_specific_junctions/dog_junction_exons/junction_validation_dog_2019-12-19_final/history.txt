@@ -1,0 +1,1000 @@
+    1  python3 ../../../../../bin/nb_reads_mapped_graph.py -f nb_reads_mapped_tissue_sort_162_without_0.csv
+    2  exit
+    3  mv specific_junction_cga.bed specific_junction_feeln.bed 
+    4  awk -F\\t '{print $1, $2, $3, $6, $11, $12}' specific_junction_feeln.bed > specific_junction_feeln.bed6
+    5  awk -F\\t '{print $1, $2, $3, $6}' specific_junction_feeln.bed > specific_junction_feeln.bed4
+    6  awk -F\\t '{print $1, $2, $3, $6, $11, $12}' specific_junction_cga.bed > specific_junction_cga.bed6
+    7  awk -F\\t '{print $1, $2, $3, $6}' specific_junction_cga.bed > specific_junction_cga.bed4
+    8  exit
+    9  awk -F\\t '{print $1, $2, $3, $6, $11, $12}' specific_junction_cga_chr_total.bed specific_junction_cga_chr_total.bed6
+   10  LS
+   11  ls
+   12  chmod u+x *
+   13  ls
+   14  awk -F\\t '{print $1, $2, $3, $6, $11, $12}' specific_junction_cga_chr_total.bed specific_junction_cga_chr_total.bed6
+   15  awk -F\\t '{print $1, $2, $3, $6, $11, $12}' specific_junction_cga_chr_total.bed > specific_junction_cga_chr_total.bed6
+   16  awk -F\\t '{print $1, $2, $3, $6}' specific_junction_cga_chr_total.bed > specific_junction_cga_chr_total.bed4
+   17  exit
+   18  thonny 
+   19  cluster
+   20  exit
+   21  cluste
+   22  cluster
+   23  exit
+   24  cluster
+   25  exit
+   26  cluster
+   27  exit
+   28  cluster
+   29  exit
+   30  cluster
+   31  exit
+   32  cluster
+   33  exit
+   34  cluster
+   35  exit
+   36  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_9.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+   37  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_13.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+   38  cd ../data_article_SRA/
+   39  ls
+   40  scp 199_14_GAGTGG_L005_R1_001.fastq.gz niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_14/
+   41  scp 199_15_ACTGAT_L005_R1_001.fastq.gz niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_15/
+   42  scp 199_16_ATTCCT_L005_R1_001.fastq.gz niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_16/
+   43  scp 199_17_ATCACG_L006_R1_001.fastq.gz niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_17/
+   44  scp 199_18_TTAGGC_L006_R1_001.fastq.gz niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_18/
+   45  scp 199_19_GATCAG_L006_R1_001.fastq.gz niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_19/
+   46  scp 199_20_TAGCTT_L006_R1_001.fastq.gz niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_20/
+   47  scp 199_21_GGCTAC_L006_R1_001.fastq.gz niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_21/
+   48  scp 199_22_GAGTGG_L006_R1_001.fastq.gz niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_22/
+   49  scp 199_23_ACTGAT_L006_R1_001.fastq.gz niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_23/
+   50  scp 199_24_ATTCCT_L006_R1_001.fastq.gz niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_24/
+   51  scp 199_25_ATCACG_L007_R1_001.fastq.gz niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_25/
+   52  scp 199_26_TTAGGC_L007_R1_001.fastq.gz niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_26/
+   53  scp 199_27_GATCAG_L007_R1_001.fastq.gz niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_27/
+   54  scp 199_28_TAGCTT_L007_R1_001.fastq.gz niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_28/
+   55  scp 199_29_GGCTAC_L007_R1_001.fastq.gz niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_29/
+   56  exit
+   57  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_7.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+   58  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_10.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+   59  exit
+   60  cd /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+   61  lse
+   62  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_6.tar.gz 
+   63  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_6.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+   64  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_8.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+   65  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_12.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+   66  cluster
+   67  exit
+   68  cluster
+   69  exit
+   70  cluster
+   71  exit
+   72  python3 ../../../../../bin/nb_reads_mapped_graph.py -f nb_reads_mapped_tissue.csv
+   73  exit
+   74  cluster
+   75  exit
+   76  cluster
+   77  exit
+   78  cluster
+   79  exit
+   80  cluster
+   81  exit
+   82  cluster
+   83  exit
+   84  cluster
+   85  exit
+   86  cluster
+   87  exit
+   88  cluster
+   89  cd /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+   90  ls
+   91  cluster
+   92  exit
+   93  cd /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+   94  ls
+   95  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_14.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+   96  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_15.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+   97  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_16.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+   98  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_17.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+   99  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_18.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+  100  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_19.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+  101  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_20.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+  102  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_21.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+  103  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_22.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+  104  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_23.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+  105  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_24.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+  106  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_25.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+  107  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_26.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+  108  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_27.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+  109  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_28.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+  110  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_29.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+  111  exit
+  112  cd ..
+  113  ls
+  114  cd data_article_SRA/
+  115  ls
+  116  scp 199_30_GAGTGG_L007_R1_001.fastq.gz niguilla@openstack.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_30/
+  117  scp 199_31_ACTGAT_L007_R1_001.fastq.gz niguilla@openstack.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_31/
+  118  scp 199_32_ATTCCT_L007_R1_001.fastq.gz niguilla@openstack.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_32/
+  119  scp 199_33_ATCACG_L008_R1_001.fastq.gz niguilla@openstack.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_33/
+  120  scp 199_34_TTAGGC_L008_R1_001.fastq.gz niguilla@openstack.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_34/
+  121  scp 199_35_GATCAG_L008_R1_001.fastq.gz 199_36_TAGCTT_L008_R1_001.fastq.gz 199_37_GGCTAC_L008_R1_001.fastq.gz 199_38_GAGTGG_L008_R1_001.fastq.gz 199_39_ACTGAT_L008_R1_001.fastq.gz niguilla@openstack.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/
+  122  exit
+  123  cp sample_14/199_14_GAGTGG_L005_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam BAM/
+  124  ls BAM/
+  125  cd BAM/
+  126  ls
+  127  mv 199_14_GAGTGG_L005_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam T14.bam
+  128  ls
+  129  cd ..
+  130  cp sample_15/199_15_ACTGAT_L005_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam BAM/
+  131  mv BAM/199_15_ACTGAT_L005_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam BAM/T15.bam
+  132  ls BAM/
+  133  cp sample_16/199_16_ATTCCT_L005_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam BAM/
+  134  mv BAM/199_16_ATTCCT_L005_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam BAM/T16.bam
+  135  ls BAM/
+  136  cp sample_17/199_17_ATCACG_L006_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam BAM/
+  137  mv BAM/199_17_ATCACG_L006_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam BAM/T17.bam
+  138  ls BAM/
+  139  cp sample_18/199_18_TTAGGC_L006_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam BAM/
+  140  mv BAM/199_18_TTAGGC_L006_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam T18.bam
+  141  cp sample_19/199_19_GATCAG_L006_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam BAM/
+  142  mv BAM/199_19_GATCAG_L006_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam BAM/T19.bam
+  143  cp sample_20/199_20_TAGCTT_L006_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam sample_21/199_21_GGCTAC_L006_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam sample_22/199_22_GAGTGG_L006_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam BAM/
+  144  mv BAM/199_20_TAGCTT_L006_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam BAM/T20.bam
+  145  mv BAM/199_21_GGCTAC_L006_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam BAM/T21.bam
+  146  mv BAM/199_22_GAGTGG_L006_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam BAM/T22.bam
+  147  cp sample_23/199_23_ACTGAT_L006_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam sample_24/199_24_ATTCCT_L006_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam sample_25/199_25_ATCACG_L007_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam BAM/
+  148  cp sample_26/199_26_TTAGGC_L007_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam sample_27/199_27_GATCAG_L007_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam BAM/
+  149  cp sample_28/199_28_TAGCTT_L007_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam BAM/
+  150  ls
+  151  cp sample_29/199_29_GGCTAC_L007_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam BAM/
+  152  ls BAM/
+  153  cd BAM/
+  154  ls
+  155  mv 199_23_ACTGAT_L006_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam T23.bam
+  156  mv 199_24_ATTCCT_L006_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam T24.bam
+  157  mv 199_25_ATCACG_L007_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam T25.bam
+  158  mv 199_26_TTAGGC_L007_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam T26.bam
+  159  mv 199_27_GATCAG_L007_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam T27.bam
+  160  mv 199_28_TAGCTT_L007_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam T28.bam
+  161  mv 199_29_GGCTAC_L007_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam T29.bam
+  162  ls
+  163  ls -l
+  164  cd ..
+  165  cd ~/Documents/Software/gtf_validator_of_cgalcode_prediction/examples/validation_part2/mouse_junction_exons/
+  166  ls
+  167  bash ../../../bin/run_multi_junction_alignment.sh mouse 65
+  168  exit
+  169  cd sample_13/
+  170  ls
+  171  cp 199_13_GGCTAC_L005_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam ../BAM/
+  172  cd ..
+  173  tar -zxvf sample_14.tar.gz 
+  174  tar -zxvf sample_15.tar.gz 
+  175  tar -zxvf sample_16.tar.gz 
+  176  tar -zxvf sample_17.tar.gz 
+  177  tar -zxvf sample_18.tar.gz 
+  178  tar -zxvf sample_19.tar.gz 
+  179  tar -zxvf sample_20.tar.gz 
+  180  tar -zxvf sample_21.tar.gz 
+  181  tar -zxvf sample_22.tar.gz 
+  182  tar -zxvf sample_23.tar.gz 
+  183  tar -zxvf sample_24.tar.gz 
+  184  tar -zxvf sample_25.tar.gz 
+  185  tar -zxvf sample_26.tar.gz 
+  186  tar -zxvf sample_27.tar.gz 
+  187  tar -zxvf sample_28.tar.gz 
+  188  tar -zxvf sample_29.tar.gz 
+  189  exit
+  190  cluster
+  191  exit
+  192  cluster
+  193  exit
+  194   cd '/home/niguilla/Téléchargements/a suppr/'
+  195   clear
+  196   cd '/home/niguilla/Téléchargements/a suppr/'
+  197   clear
+  198  pwd
+  199  cd /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+  200  ls
+  201  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/
+  202  exit
+  203  cluster
+  204  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_30.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+  205  cluster$
+  206  cluster
+  207  exit
+  208  cluster
+  209  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_31.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+  210  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_32.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+  211  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_33.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+  212  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_34.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+  213  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_35.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+  214  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_36.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+  215  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_37.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+  216  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_38.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+  217  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/sample_39.tar.gz /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+  218  exit
+  219  touch rarefaction.py
+  220  pip install --user vegan
+  221  pip3 install --user vegan
+  222  pip3 search vegan
+  223  pip3 install --user PyVegan
+  224  pip install --user PyVegan
+  225  pip install --user pandas-datareader
+  226  pip install --user PyVegan
+  227  pip3 install --user pandas-datareader
+  228  pip3 install --user PyVegan
+  229  diff Mus_musculus.GRCm38.98.gtf Mus_musculus.GRCm38.98_test.gtf 
+  230  tar -zxvf sample_34.tar.gz
+  231  tar -zxvf sample_36.tar.gz
+  232  tar -zxvf sample_38.tar.gz
+  233  cluster
+  234  exit
+  235  cluster
+  236  cd /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+  237  ls
+  238  cp sample_30/199_30_GAGTGG_L007_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam sample_31/199_31_ACTGAT_L007_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam sample_32/199_32_ATTCCT_L007_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam sample_33/199_33_ATCACG_L008_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam BAM/
+  239  cp sample_34/199_34_TTAGGC_L008_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam sample_35/199_35_GATCAG_L008_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam sample_36/199_36_TAGCTT_L008_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam sample_37/199_37_GGCTAC_L008_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam BAM/
+  240  cp sample_38/199_38_GAGTGG_L008_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam sample_39/199_39_ACTGAT_L008_R1_001.fastq.gz.Aligned.sortedByCoord.out.bam BAM/
+  241  cd ../..
+  242  cd ../human_data/
+  243  ls
+  244  cd ref/
+  245  ls
+  246  scp Homo_sapiens.GRCh38.98.gtf niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/
+  247  exit
+  248  cd /run/media/niguilla/Dyliss_NG/mouse_data/Sollner/Alignements/
+  249  tar -zxvf sample_30.tar.gz 
+  250  tar -zxvf sample_31.tar.gz 
+  251  tar -zxvf sample_32.tar.gz 
+  252  tar -zxvf sample_33.tar.gz 
+  253  tar -zxvf sample_35.tar.gz 
+  254  tar -zxvf sample_37.tar.gz 
+  255  tar -zxvf sample_39.tar.gz 
+  256  cluster
+  257  exit
+  258  tar -jtf Mus_musculus_NCBI_GRCm38.tar.gz
+  259  tar -ztf Mus_musculus_NCBI_GRCm38.tar.gz
+  260  tar -ztf Mus_musculus_Ensembl_GRCm38.tar.gz 
+  261  exit
+  262  bash ../../../bin/run_multi_junction_alignment.sh mouse 65
+  263  exit
+  264  thonny 
+  265  exit
+  266   cd '/home/niguilla/Téléchargements/a suppr/'
+  267   clear
+  268  cluster
+  269  exit
+  270   cd /run/media/niguilla/Dyliss_NG/human_data/vastdb/
+  271   clear
+  272   cd /home/niguilla/Documents/Software/
+  273   clear
+  274  ./vdb-config -i
+  275  touch signature_meline.txt
+  276   cd /home/niguilla/Documents/these_nguillaudeux/Archives_docs/Enseignements/Python/materiel_tp_2019/
+  277   clear
+  278   cd /home/niguilla/Documents/these_nguillaudeux/Archives_docs/Enseignements/Python
+  279  bash ../../../bin/run_multi_junction_alignment.sh human 65
+  280  exit
+  281  bash ../../../bin/run_extract_junction.sh human 65
+  282  exit
+  283  cd ~
+  284  ls
+  285  ls -a
+  286  vi .bashrc 
+  287  source .bashrc 
+  288  ls
+  289  cd Documents/Software/gtf_validator_of_cgalcode_prediction/
+  290  ls
+  291  git status
+  292  git add .
+  293  git status
+  294  git commit -m "update"
+  295  git push -u origin master
+  296  git status
+  297  exit
+  298  python3
+  299  exit
+  300  ls
+  301  bash postinst.sh 
+  302  ls resources
+  303  ./resources/bootstrap/
+  304  ls resources/bootstrap/
+  305  ls
+  306  ./Discord
+  307  ls
+  308  ./discord.desktop
+  309  cd ~/
+  310  ls
+  311  cd Documents/
+  312  ls
+  313  cd ..
+  314  ls
+  315  whereis ncbi
+  316  whereis ncbi/
+  317  ls
+  318  cd /run/media/
+  319  ./home/niguilla/Documents/Software/sratoolkit.2.10.0-ubuntu64/bin/fastq-dump -h
+  320  bash /home/niguilla/Documents/Software/sratoolkit.2.10.0-ubuntu64/bin/fastq-dump -h
+  321  cd ~
+  322  ls
+  323  ls -al
+  324  ls -l
+  325  cd Downloads/
+  326  ls
+  327  mkdir recup_data
+  328  cd recup_data/
+  329  ./home/niguilla/Documents/Software/sratoolkit.2.10.0-ubuntu64/bin/fastq-dump -h
+  330  /home/niguilla/Documents/Software/sratoolkit.2.10.0-ubuntu64/bin/fastq-dump -h
+  331  /home/niguilla/Documents/Software/sratoolkit.2.10.0-ubuntu64/bin/fastq-dump -V
+  332  /home/niguilla/Documents/Software/sratoolkit.2.10.0-ubuntu64/bin/fastq-dump -v
+  333  /home/niguilla/Documents/Software/sratoolkit.2.10.0-ubuntu64/bin/fastq-dump -h
+  334  /home/niguilla/Documents/Software/sratoolkit.2.10.0-ubuntu64/bin/fastq-dump -X 5 -Z SRR5171082
+  335   fastq-dump -I --split-files SRR390728 
+  336  fastq-dump -I --split-files SRR390728 
+  337  source ~/.bashrc 
+  338  fastq-dump -X 5 -Z SRR390728
+  339  ls
+  340  fastq-dump --split-files --fasta 60 SRR390728
+  341  cd /run/media/niguilla/Dyliss_NG/human_data/test/
+  342  scp SRR306838_CORTEX.fastq SRR306844_CEREBELLUM.fastq SRR3405458_COLON.fastq niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/
+  343  scp SRR306847_HEART.fastq  niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/
+  344  cluster
+  345  exit
+  346  cluster
+  347  exit
+  348  touch list_download.txt
+  349  touch list.txt
+  350  bash ../../../bin/run_multi_junction_alignment.sh human 65
+  351  exit
+  352  gzip SRR3405458_COLON.fastq 
+  353  exit
+  354  cluster
+  355  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/sample_cerebellum.tar.gz /run/media/niguilla/Dyliss_NG/human_data/test/
+  356  cd /run/media/niguilla/Dyliss_NG/human_data/test/
+  357  ls
+  358  mkdir fastq
+  359  mv SRR3068* fastq/
+  360  ls
+  361  mv SRR3405458_COLON.fastq fastq/
+  362  ls
+  363  tar -zxvf sample_cerebellum.tar.gz 
+  364  ls
+  365  cd sample_cerebellum/
+  366  ms
+  367  ls
+  368  firefox *.html
+  369  cluster
+  370  cat
+  371  clear
+  372  ls
+  373  cd ../Cortex/
+  374  ls
+  375  cat list.txt | parallel --gnu "wget {}"
+  376  cd ../Colon/
+  377  cat list.txt 
+  378  cat list.txt | parallel --gnu "wget {}"
+  379  cat ../list_download.txt | parallel --gnu "glet {}"
+  380  cat ../list_download.txt | parallel --gnu "wget {}"
+  381  awk -F '{print $1, $2, $4, $7, $9, $11, $16}' E-MTAB-2836.sdrf.txt 
+  382  cp E-MTAB-2836.sdrf.txt E-MTAB-2836.tsv
+  383  awk -F '{print $1, $2, $4, $7, $9, $11, $16}' E-MTAB-2836.tsv 
+  384  ls
+  385  cd ../../mouse_data/
+  386  ls
+  387  mkdir rep_cluster_mouse
+  388  cd re
+  389  cd rep_cluster_mouse/
+  390  scp -r niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/ /run/media/niguilla/Dyliss_NG/mouse_data/rep_cluster_mouse/
+  391  git status 
+  392  cd ..
+  393  ls
+  394  git status
+  395  cd ..
+  396  ls
+  397  cd ../Adrenal_gland/
+  398  wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR315/ERR315335/ERR315335_1.fastq.gz
+  399  wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR315/ERR315335/ERR315335_2.fastq.gz
+  400  exit
+  401  python3
+  402  exit
+  403  cd ../Duodenum/
+  404  wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR315/ERR315445/ERR315445_1.fastq.gz
+  405  wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR315/ERR315445/ERR315445_2.fastq.gz
+  406  wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR315/ERR315434/ERR315434_1.fastq.gz
+  407  wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR315/ERR315434/ERR315434_2.fastq.gz
+  408  cd ../Heart/
+  409  wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR315/ERR315328/ERR315328_1.fastq.gz
+  410  wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR315/ERR315328/ERR315328_2.fastq.gz
+  411  cd ../Liver/
+  412  wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR315/ERR315463/ERR315463_1.fastq.gz
+  413  wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR315/ERR315463/ERR315463_2.fastq.gz
+  414  exit
+  415  bash ../../../bin/run_multi_junction_alignment.sh human 65
+  416  exit
+  417  cluster
+  418  exit
+  419  python3 ../../../../../bin/nb_reads_mapped_graph.py -f nb_reads_mapped_tissue.csv
+  420  cd ~
+  421  cleatr
+  422  clear
+  423  cluster
+  424  exit
+  425  cd ../../human_data/Wang/fastq/Adrenal_gland/
+  426  ls
+  427  cat list_download.txt | parallel --gnu "wget {}"
+  428  wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR315/ERR315335/ERR315335_1.fastq.gz
+  429  wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR315/ERR315335/ERR315335_2.fastq.gz
+  430  cd ../Cortex/
+  431  wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR315/ERR315477/ERR315477_1.fastq.gz
+  432  wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR315/ERR315477/ERR315477_2.fastq.gz
+  433  cd ../Colon/
+  434  wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR315/ERR315348/ERR315348_1.fastq.gz
+  435  wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR315/ERR315348/ERR315348_2.fastq.gz
+  436  cd ../Kidney/
+  437  wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR315/ERR315494/ERR315494_1.fastq.gz
+  438  wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR315/ERR315494/ERR315494_2.fastq.gz
+  439  cd ../Lung/
+  440  wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR315/ERR315346/ERR315346_1.fastq.gz
+  441  wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR315/ERR315346/ERR315346_2.fastq.gz
+  442  cd ../Ovary/
+  443  wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR315/ERR315482/ERR315482_1.fastq.gz
+  444  exit
+  445  cd ../../../../mouse_data/rep_cluster_mouse/
+  446  scp -r niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/mouse_data_fastq/ /run/media/niguilla/Dyliss_NG/mouse_data/rep_cluster_mouse/
+  447  cluster
+  448  ls
+  449  cd ../..
+  450  ls
+  451  cd human_data/
+  452  ls
+  453  cd Wang/
+  454  ls
+  455  cd fastq/
+  456  ls
+  457  cd Adrenal_gland/
+  458  scp ERR315335_1.fastq.gz niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/
+  459  cluster
+  460  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/Adrenal_gland.tar.gz /run/media/niguilla/Dyliss_NG/human_data/Wang/
+  461  exit
+  462  touch list_download
+  463  cp ERR315335_2.fastq.gz.Aligned.sortedByCoord.out.bam ../../bam/ADRENALGLAND_ERR315335_2.bam 
+  464  cd ../sample_Colon1/
+  465  ls
+  466  cp ERR315348_1.fastq.gz.Aligned.sortedByCoord.out.bam ../../bam/COLON_ERR315348_1.bam
+  467  cd ../sample_Colon2/
+  468  cp ERR315348_2.fastq.gz.Aligned.sortedByCoord.out.bam ../../bam/COLON_ERR315348_2.bam 
+  469  cd ..
+  470  ls
+  471  cd /run/media/niguilla/Dyliss_NG/
+  472  cd human_data/
+  473  clear
+  474  ls
+  475  cd Wang/
+  476  ls
+  477  cp alignments/sample_Duodenum2/ERR315445_2.fastq.gz.Aligned.sortedByCoord.out.bam bam/DUODENUM_ERR315445_2.bam 
+  478  cp sample_Cortex*/*.bam ../bam/
+  479  ls
+  480  cp sample_Duodenum1/ERR315445_1.fastq.gz.Aligned.sortedByCoord.out.bam ../bam/
+  481  cp sample_Duodenum1/ERR315445_1.fastq.gz.Aligned.sortedByCoord.out.bam ../bam/DUODENUM_ERR315445_1.bam
+  482  cluster
+  483  exit
+  484  cluster
+  485  exit
+  486  cd /run/media/niguilla/Dyliss_NG/human_data/Wang/fastq/
+  487  ls
+  488  cd Cortex/
+  489  ls
+  490  scp ERR315477_* niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/
+  491  cd ../Duodenum/
+  492  scp ERR315445_* niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/
+  493  cluster
+  494  cd ../..
+  495  ls
+  496  cd alignments/
+  497  ls
+  498  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/sample_Cortex1.tar.gz /run/media/niguilla/Dyliss_NG/human_data/Wang/alignments/
+  499  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/sample_Cortex2.tar.gz /run/media/niguilla/Dyliss_NG/human_data/Wang/alignments/
+  500  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/sample_Duodenum1.tar.gz /run/media/niguilla/Dyliss_NG/human_data/Wang/alignments/
+  501  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/sample_Duodenum2.tar.gz /run/media/niguilla/Dyliss_NG/human_data/Wang/alignments/
+  502  cd ../fastq/
+  503  ls
+  504  cd Download/
+  505  ls
+  506  cat list_download.txt | parallel --gnu "wget {}"
+  507  cd ..
+  508  ls
+  509  scp -r Esophagus/ niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/
+  510  cluster
+  511  exit
+  512  cluster
+  513  ls
+  514  cd ..
+  515  ls
+  516  cd Adrenal_gland/
+  517  ls
+  518  cd ..
+  519  ls
+  520  cd ..
+  521  ls
+  522  cd bam/
+  523  ls
+  524  cd ..
+  525  ls
+  526  mkdir alignments
+  527  mv Adrenal_gland.tar.gz alignments/
+  528  cd Adrenal_gland/*
+  529  cd Adrenal_gland/
+  530  ls
+  531  cd ..
+  532  ls
+  533  rm -r Adrenal_gland/
+  534  ls
+  535  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/sample_Adrenal_gland2.tar.gz 
+  536  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/sample_Adrenal_gland2.tar.gz /run/media/niguilla/Dyliss_NG/human_data/Wang/alignments/
+  537  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/sample_Colon1.tar.gz /run/media/niguilla/Dyliss_NG/human_data/Wang/alignments/
+  538  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/sample_Colon2.tar.gz /run/media/niguilla/Dyliss_NG/human_data/Wang/alignments/
+  539  cd ~/Documents/Software/gtf_validator_of_cgalcode_prediction/examples/validation_part2/human_junction_exons/
+  540  ls
+  541  bash ../../../bin/run_multi_junction_alignment.sh human 65
+  542  exit
+  543  cd /run/media/niguilla/Dyliss_NG/human_data/Wang/fastq/Adrenal_gland/
+  544  scp ERR315335_2.fastq.gz niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/
+  545  cd ../Colon/
+  546  ls
+  547  scp ERR315348_* niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/
+  548  cluster
+  549  exit
+  550  cd /run/media/niguilla/
+  551  ls
+  552  exit
+  553  touch list_tr_with_reads_align_within_162
+  554  mv list_tr_with_reads_align_within_162 list_tr_with_reads_align_within_162.txt
+  555  clear
+  556  touch list_tr_without_reads_align_within_162.txt
+  557  cluster
+  558  exit
+  559  cluster
+  560  exit
+  561  cd /run/media/niguilla/Dyliss_NG/human_data/Wang/alignments/
+  562  ls
+  563  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/Esophagus.tar.gz /run/media/niguilla/Dyliss_NG/human_data/Wang/alignments/
+  564  ls
+  565  tar -zxvf Esophagus.tar.gz 
+  566  ls
+  567  cp Esophagus/ERR315434_*.bam ../bam/
+  568  cd ../bam/*$
+  569  cd ../bam/
+  570  ls
+  571  mv ERR315434_1.fastq.gz.Aligned.sortedByCoord.out.bam HEART_ERR315434_1.bam
+  572  mv ERR315434_2.fastq.gz.Aligned.sortedByCoord.out.bam HEART_ERR315434_2.bam
+  573  cd ../fastq/
+  574  ls
+  575  scp -r Kidney/ Liver/ Lung/ niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/
+  576  exit
+  577  cd ../fastq/
+  578  ls
+  579  scp -r Heart/ niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/
+  580  cd ../alignments/
+  581  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/Heart.tar.gz ../alignments/
+  582  exit
+  583  cat list_tr_with_reads_align_within_162.txt 
+  584  cat list_tr_with_reads_align_within_162.txt | wc -l
+  585  cat list_tr_with_reads_align_within_162.txt | wc -l | sort
+  586  cat list_tr_with_reads_align_within_162.txt | sort | wc -l
+  587  cat list_tr_with_reads_align_within_162.txt | sort -u | wc -l
+  588  cat list_tr_without_reads_align_within_162.txt | sort -u | wc -l
+  589  cat list_tr_with_reads_align_within_162.txt | sort -u > list_tr_with_reads_align_within_162.sort.txt 
+  590  cat list_tr_without_reads_align_within_162.txt | sort -u > list_tr_without_reads_align_within_162.sort.txt
+  591  cat list_tr_with_reads_align_within_162.txt | sort -u | wc -l
+  592  cat list_tr_with_reads_align_within_162.txt | sort | wc -l
+  593  cat list_tr_without_reads_align_within_162.txt | sort -u | wc -l
+  594  cat list_tr_without_reads_align_within_162.txt | sort | wc -l
+  595  cluster
+  596  exit
+  597  bash ../../../bin/run_multi_junction_alignment.sh human 65
+  598  exit
+  599  cluster
+  600  exit
+  601  cd /run/media/niguilla/Dyliss_NG/human_data/Wang/alignments/
+  602  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/Kidney.tar.gz ../alignments/
+  603  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/Liver.tar.gz ../alignments/
+  604  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/Lung.tar.gz ../alignments/
+  605  exit
+  606  echo 'alias ls = firefox https://www.youtube.com/watch?v=G1IbRujko-A'
+  607  alias ls = firefox https://www.youtube.com/watch?v=G1IbRujko-A
+  608  alias ls = 'firefox https://www.youtube.com/watch?v=G1IbRujko-A'
+  609  alias ls='firefox https://www.youtube.com/watch?v=G1IbRujko-A'
+  610  ls
+  611  echo 'alias ls='firefox https://www.youtube.com/watch?v=G1IbRujko-A''
+  612  echo 'alias ls=_'firefox https://www.youtube.com/watch?v=G1IbRujko-A\''
+  613  "
+  614  "
+  615  echo 'alias ls="firefox https://www.youtube.com/watch?v=G1IbRujko-A"'
+  616  echo 'alias ls="firefox https://www.youtube.com/watch?v=G1IbRujko-A"' >> ~/.bashrc
+  617  source ~/.bashrc 
+  618  ls
+  619  cd ~
+  620  ls
+  621  vi .bashrc 
+  622  ls
+  623  source .bashrc 
+  624  ls
+  625  vi .bashrc 
+  626  ls analysed/
+  627  exit
+  628  mv ERR315482_2.fastq.gz ../Ovary/
+  629  mv ERR315466_* ../Pancreas/
+  630  mv ERR315401_* ../Skin/
+  631  mv ERR315338_* ../Spleen/
+  632  mv ERR315379_* ../Stomach/
+  633  mv ERR315351_* ../Testis/
+  634  mv ERR315422_* ../Thyroid_gland/
+  635  cd ..
+  636  ls
+  637  scp -r Esophagus/ Ovary/ Pancreas/ niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/
+  638  cluster
+  639  scp -r Skin/ niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/
+  640  cluster
+  641  exit
+  642  cd ../alignments/
+  643  ks
+  644  ls
+  645  cd Esophagus/
+  646  ls
+  647  cp ERR315434_1.fastq.gz.Aligned.sortedByCoord.out.bam ESOPHAGUS_ERR315434_1.bam
+  648  cp ERR315434_2.fastq.gz.Aligned.sortedByCoord.out.bam ESOPHAGUS_ERR315434_2.bam 
+  649  mv ESOPHAGUS_ERR315434_* ../../bam/
+  650  ls
+  651  cd ../../bam/
+  652  ls
+  653  cd ~/Documents/Software/gtf_validator_of_cgalcode_prediction/examples/validation_part2/human_junction_exons/
+  654  ls
+  655  bash ../../../bin/run_multi_junction_alignment.sh human 65
+  656  exit
+  657  cd /run/media/niguilla/Dyliss_NG/
+  658  cd human_data/Wang/alignments/
+  659  ls
+  660  soucre ~/.bashrc 
+  661  source ~/.bashrc 
+  662  ls
+  663  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/Skin.tar.gz ../alignments/
+  664  tar -zxvf Skin.tar.gz 
+  665  ls Skin/
+  666  cp Skin/ERR315401_1.fastq.gz.Aligned.sortedByCoord.out.bam ../bam/SKIN1
+  667  ls
+  668  ls ../bam/
+  669  cp Skin/ERR315401_2.fastq.gz.Aligned.sortedByCoord.out.bam ../bam/SKIN2.bam
+  670  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/Ovary.tar.gz ../alignments/
+  671  ls
+  672  rm -r Esophagus/
+  673  rm -r Skin/
+  674  ls
+  675  tar -zxvf Ovary.tar.gz 
+  676  ls
+  677  cp Ovary/ERR315482_1.fastq.gz.Aligned.sortedByCoord.out.bam ../bam/OVARY1.bam
+  678  cp Ovary/ERR315482_2.fastq.gz.Aligned.sortedByCoord.out.bam ../bam/OVARY2.bam
+  679  ls
+  680  rm -r Ovary/
+  681  ls
+  682  exit
+  683  cd ../bam/
+  684  ls
+  685  mv SKIN1 SKIN1.bam
+  686  ls
+  687  exit
+  688  cluster
+  689  cd /run/media/niguilla/Dyliss_NG/
+  690  ls
+  691  cd human_data/Wang/
+  692  ls
+  693  cd alignments/
+  694  tar -zcvf Liver.tar.gz
+  695  tar -zxvf Liver.tar.gz 
+  696  tar -zxvf Lung.tar.gz
+  697  cd Kidney/
+  698  ls
+  699  cp ERR315494_1.fastq.gz.Aligned.sortedByCoord.out.bam KIDNEY_ERR315494_1.bam
+  700  cp ERR315494_2.fastq.gz.Aligned.sortedByCoord.out.bam KIDNEY_ERR315494_2.bam
+  701  mv KIDNEY_ERR315494_* ../../bam/
+  702  ls
+  703  ls ../../bam/
+  704  cd ..
+  705  ls
+  706  cd Liver
+  707  ls
+  708  cp ERR315463_1.fastq.gz.Aligned.sortedByCoord.out.bam LIVER_ERR315463_1.bam
+  709  cp ERR315463_2.fastq.gz.Aligned.sortedByCoord.out.bam LIVER_ERR315463_2.bam
+  710  mv LIVER_ERR315463_* ../../bam/
+  711  cd ../Lung/
+  712  ls
+  713  cp ERR315346_1.fastq.gz.Aligned.sortedByCoord.out.bam LUNG_ERR315346_1.bam
+  714  cp ERR315346_2.fastq.gz.Aligned.sortedByCoord.out.bam LUNG_ERR315346_2.bam
+  715  mv LUNG_ERR315346_* ../../bam/
+  716  ls
+  717  cd ../../bam/
+  718  ls
+  719  ls -l
+  720  cd ~/Documents/Software/gtf_validator_of_cgalcode_prediction/examples/validation_part2/human_junction_exons/
+  721  ls
+  722  bash ../../../bin/run_multi_junction_alignment.sh human 65
+  723  cluster
+  724  exit
+  725   cd /home/niguilla/Documents/these_nguillaudeux/Archives_docs/Communication/2019/seqbim/
+  726   clear
+  727  cluster
+  728  vi .bashrc 
+  729  cluster
+  730  exit
+  731  touch page.html
+  732  touch normalize.css
+  733  touch pierremorisse.css
+  734  cd Documents/
+  735  sudo dnf update > update_191018.txt
+  736  exit
+  737  git status
+  738  git add .
+  739  git status
+  740  git commit -m "update -> results validation with reads data in human (dog and mouse already update previously)"
+  741  git push -u origin master
+  742  git status
+  743  exit
+  744  git status
+  745  git config --global user.name "Guillaudeux Nicolas"
+  746  git config --global user.email "nicolasguillaudeux@orange.fr"
+  747  touch README.md
+  748  git init
+  749  git remote add origin https://gitlab.com/buenoofspain/these_nguillaudeux.git
+  750  git status
+  751  git add .
+  752  git commit -m "Initial commit"
+  753  git push -u origin master
+  754  exit
+  755  cluster
+  756  cat list_83.txt 
+  757  cat list_83.txt | sort 
+  758  cat list_83.txt | sort -u
+  759  cat list_83.txt | sort -u | wc -l
+  760  cat list_83.txt | sort | wc -l
+  761  tar -zxvf Colon1.tar.gz 
+  762  tar -zxvf Colon2.tar.gz 
+  763  tar -zxvf Duodenum1.tar.gz 
+  764  tar -zxvf Duodenum2.tar.gz 
+  765  tar -zcvf Duodenum.tar.gz Duodenum/
+  766  ls
+  767  rm -r Duodenum/
+  768  ls
+  769  exit
+  770  tar -zcvf Colon.tar.gz Colon/
+  771  rm -r Colon/
+  772  exit
+  773  cd /run/media/niguilla/Dyliss_NG/
+  774  cd human_data/
+  775  ls
+  776  cd Wang/
+  777  ls
+  778  cd alignments/
+  779  ms
+  780  ls
+  781  cd ../fastq/
+  782  ls
+  783  cd ../alignments/
+  784  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/Pancreas.tar.gz ../alignments/
+  785  tar -zxvf Pancreas.tar.gz 
+  786  cp Pancreas/ERR315466_1.fastq.gz.Aligned.sortedByCoord.out.bam ../bam/PANCREAS1.bam
+  787  cp Pancreas/ERR315466_2.fastq.gz.Aligned.sortedByCoord.out.bam ../bam/PANCREAS2.bam
+  788  cluster
+  789  cd ../fastq/
+  790  scp -r Spleen/ Stomach/ Testis/ niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/
+  791  scp -r Thyroid_gland/ niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/
+  792  cd ../alignments/
+  793  ls
+  794  tar -zxvf Adrenal_gland*
+  795  ls
+  796  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/Spleen.tar.gz ../alignments/
+  797  ls
+  798  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/Stomach.tar.gz ../alignments/
+  799  ls
+  800  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/Testis.tar.gz ../alignments/
+  801  ls
+  802  tar -zxvf Spleen.tar.gz 
+  803  ls
+  804  tar -zxvf Stomach.tar.gz 
+  805  ls
+  806  tar -zxvf Testis.tar.gz 
+  807  ls
+  808  cp Spleen/ERR315338_1.fastq.gz.Aligned.sortedByCoord.out.bam ../bam/SPLEEN_1.bam
+  809  cp Spleen/ERR315338_2.fastq.gz.Aligned.sortedByCoord.out.bam ../bam/SPLEEN_2.bam
+  810  cp Stomach/ERR315379_1.fastq.gz.Aligned.sortedByCoord.out.bam ../bam/STOMACH1.bam
+  811  cp Stomach/ERR315379_2.fastq.gz.Aligned.sortedByCoord.out.bam ../bam/STOMACH2.bam
+  812  cp Testis/ERR315351_1.fastq.gz.Aligned.sortedByCoord.out.bam ../bam/TESTIS1.bam
+  813  cp Testis/ERR315351_2.fastq.gz.Aligned.sortedByCoord.out.bam ../bam/TESTIS2.bam
+  814  tar -zxvf Adrenal_gland*
+  815  tar -zxvf Adrenal_gland1.tar.gz 
+  816  tar -zxvf Adrenal_gland2.tar.gz 
+  817  tar -zcvf Adrenal_gland.tar.gz Adrenal_gland/
+  818  tar -zxvf Cortex1.tar.gz 
+  819  tar -zxvf Cortex2.tar.gz 
+  820  tar -zcvf Cortex.tar.gz Cortex/
+  821  rm -r Cortex/
+  822  exit
+  823  scp niguilla@genossh.genouest.org:/home/genouest/dyliss/niguilla/human_data_fastq/Thyroid_gland.tar.gz ../alignments/
+  824  tar -zxvf Thyroid_gland.tar.gz 
+  825  cp Thyroid_gland/ERR315422_1.fastq.gz.Aligned.sortedByCoord.out.bam ../bam/THYROIDGLAND1.bam
+  826  cp Thyroid_gland/ERR315422_2.fastq.gz.Aligned.sortedByCoord.out.bam ../bam/THYROIDGLAND2.bam
+  827  rm -r Thyroid_gland/
+  828  cd ~/Documents/Software/gtf_validator_of_cgalcode_prediction/examples/validation_part2/human_junction_exons/
+  829  ls
+  830  python3 ../../../bin/run_multi_junction_alignment.sh human 65
+  831  exit
+  832  python3 ../../../bin/run_multi_junction_alignment.sh human 65
+  833  clear
+  834  bash ../../../bin/run_multi_junction_alignment.sh human 65
+  835  exit
+  836  head -n 1000 canfam3_cons_annot_TritouPuppetMasterChief_23-03-2016_lncClasse_geneBiotype_withEnsCds_withSilicoCds_withGoodGeneSource.gtf
+  837  head -n 1010 canfam3_cons_annot_TritouPuppetMasterChief_23-03-2016_lncClasse_geneBiotype_withEnsCds_withSilicoCds_withGoodGeneSource.gtf
+  838  head -n 1008 canfam3_cons_annot_TritouPuppetMasterChief_23-03-2016_lncClasse_geneBiotype_withEnsCds_withSilicoCds_withGoodGeneSource.gtf
+  839  head -n 1007 canfam3_cons_annot_TritouPuppetMasterChief_23-03-2016_lncClasse_geneBiotype_withEnsCds_withSilicoCds_withGoodGeneSource.gtf
+  840  head -n 1007 canfam3_cons_annot_TritouPuppetMasterChief_23-03-2016_lncClasse_geneBiotype_withEnsCds_withSilicoCds_withGoodGeneSource.gtf > test_feelnc.gtf
+  841  exit
+  842  bash ../../../bin/run_multi_junction_alignment_dog_after_feelnc.sh dog 65
+  843  mkdir analysis_detailled
+  844  touch valid_38.txt
+  845  touch not_valid_41.txt
+  846  cat valid_38.txt 
+  847  cat valid_38.txt | wc -l
+  848  cat valid_38.txt | sort | wc -l
+  849  cat valid_38.txt | sort -u | wc -l
+  850  cat valid_38.txt | sort -u
+  851  cat valid_38.txt | sort -u > valid_38.sort.txt 
+  852  cat not_valid_41.txt | wc -l
+  853  cat not_valid_41.txt | sort | wc -l
+  854  cat not_valid_41.txt | sort -u | wc -l
+  855  cat not_valid_41.txt | sort -u
+  856  cat not_valid_41.txt | sort -u >not_valid_41.sort.txt 
+  857  cat valid_38.sort.txt | wc -l
+  858  cat valid_38.txt | wc -l
+  859  cat not_valid_41.txt | wc -l
+  860  cat not_valid_41.sort.txt | wc -l
+  861  cat valid_38.sort.txt not_valid_41.sort.txt 
+  862  cat valid_38.sort.txt not_valid_41.sort.txt | wc -l
+  863  cat valid_38.sort.txt not_valid_41.sort.txt | sort | wc -l
+  864  cat valid_38.sort.txt not_valid_41.sort.txt | sort -u | wc -l
+  865  cat valid_38.sort.txt not_valid_41.sort.txt | sort -v | wc -l
+  866  sort -h
+  867  sort --help
+  868  cat valid_38.sort.txt not_valid_41.sort.txt | sort -v | wc -l
+  869  cat valid_38.sort.txt not_valid_41.sort.txt | sort -V | wc -l
+  870  cat valid_38.sort.txt not_valid_41.sort.txt | sort -u | wc -l
+  871  cat valid_38.sort.txt not_valid_41.sort.txt | sort -u -c | wc -l
+  872  cat valid_38.sort.txt not_valid_41.sort.txt | sort -c -u | wc -l
+  873  cat valid_38.sort.txt not_valid_41.sort.txt | sort -c | wc -l
+  874  cat valid_38.sort.txt not_valid_41.sort.txt | sort | sort -cwc -l
+  875  cat valid_38.sort.txt not_valid_41.sort.txt | sort | sort -c | wc -l
+  876  cat valid_38.sort.txt not_valid_41.sort.txt | sort | sort -u -c | wc -l
+  877  exit
+  878  touch valid_49.txt
+  879  touch not_valid_44.txt
+  880  cat valid_49.txt | wc -l
+  881  cat valid_49.txt | sort | wc -l
+  882  cat valid_49.txt | sort -u | wc -l
+  883  cat valid_49.txt | sort -u > valid_49.sort.txt 
+  884  cat not_valid_44.txt 
+  885  cat not_valid_44.txt | wc -l
+  886  cat not_valid_44.txt | sort | wc -l
+  887  cat not_valid_44.txt | sort -u | wc -l
+  888  cat not_valid_44.txt | sort -u > not_valid_44.sort.txt 
+  889  exit
+  890  exit
+  891  touch valid_53.txt
+  892  touch not_valid_20.txt
+  893  clear
+  894  cat valid_53.txt | wc -l
+  895  cat valid_53.txt | sort | wc -l
+  896  cat valid_53.txt | sort -u | wc -l
+  897  cat valid_53.txt | sort -u > valid_53.sort.txt
+  898  cat not_valid_20.txt | wc -l
+  899  cat not_valid_20.txt | sort | wc -l
+  900  cat not_valid_20.txt | sort -u | wc -l
+  901  cat not_valid_20.txt | sort -u > not_valid_20.sort.txt 
+  902  exit
+  903   cd '/home/niguilla/Téléchargements/a suppr/'
+  904   clear
+  905   cd /home/niguilla/Téléchargements/biblio_janvier_2020/
+  906   clear
+  907   cd /home/niguilla/Téléchargements/biblio_janvier_2020/
+  908   clear
+  909   cd /run/media/niguilla/Dyliss_NG/DCIM/
+  910   clear
+  911   cd '/home/niguilla/Téléchargements/a suppr/'
+  912   clear
+  913   cd /home/niguilla/Documents
+  914   cd '/home/niguilla/Téléchargements/a suppr/'
+  915   cd /home/niguilla/Documents/these_nguillaudeux/Archives_docs/SEC/
+  916   clear
+  917   cd /home/niguilla/Documents/these_nguillaudeux/Archives_docs/SEC/
+  918   clear
+  919   cd /home/niguilla/Documents/these_nguillaudeux/Archives_docs/Formations/Missions_Enseignements/2019/MAT1/
+  920   clear
+  921   cd /home/niguilla/Documents/these_nguillaudeux/Archives_docs/Formations/Missions_Enseignements/2019
+  922   cd /home/niguilla/Documents/these_nguillaudeux/Archives_docs/Formations/Missions_Enseignements/2019/PPC
+  923   cd /home/niguilla/Documents/these_nguillaudeux/Archives_docs/Formations/Missions_Enseignements/2019
+  924   cd /home/niguilla/Documents/these_nguillaudeux/Archives_docs/Formations/Missions_Enseignements/2019/MAT1
+  925  cd 0_total_genes_exact_without_cn_prediction-hs-mm-clf-2019-03-13/graph_tr_set/
+  926  gephi obtention_Graph_tr_ENSG00000054267-ENSMUSG00000039219-ENSCAFG00000011439_for_Gephi.gexf &
+  927  gephi obtention_Graph_tr_ENSG00000054267-ENSMUSG00000039219-ENSCAFG00000011439_for_Gephi.gexf
+  928  exit
+  929  cd graph_
+  930  cd graph_tr_set/
+  931  gephi obtention_Graph_tr_ENSG00000054267-ENSMUSG00000039219-ENSCAFG00000011439_for_Gephi.gexf 
+  932  exit
+  933  cd 0_total_genes_exact_without_cn_prediction-hs-mm-clf-2019-03-13/
+  934  ls
+  935  egrep "ENSG00000054267|ENSMUSG00000039219|ENSCAFG00000011439" output_run2.txt 
+  936  exit
+  937  gephi 
+  938  gephi obtention_Graph_tr_ENSG00000054267-ENSMUSG00000039219-ENSCAFG00000011439_for_Gephi.gexf 
+  939  jobs 
+  940  jobs
+  941  fg
+  942  exit
+  943  gephi obtention_Graph_tr_ENSG00000000457-ENSMUSG00000026584-ENSCAFG00000015126_for_Gephi.gexf 
+  944  jobs
+  945  gephi obtention_Graph_tr_ENSG00000000457-ENSMUSG00000026584-ENSCAFG00000015126_for_Gephi.gexf 
+  946  cd bin/
+  947  ./gephi 
+  948  vi README.md
+  949  exit
+  950  cd Documents/these_nguillaudeux/Data/genes_one2one_hs_mm_clf_with_at_least_2_CCDS/0_total_genes_exact_without_cn_prediction-hs-mm-clf-2019-03-13/
+  951  clear
+  952  egrep "ENSG00000054267|ENSMUSG00000039219|ENSCAFG00000011439" output_run2.txt 
+  953  egrep "ENSG00000054267|ENSMUSG00000039219|ENSCAFG00000011439" output_run2.txt clear
+  954  clear
+  955  egrep "ENSG00000168959|ENSMUSG00000049583|ENSCAFG00000004381" output_run2.txt 
+  956  clear
+  957  egrep "ENSG00000096717|ENSMUSG00000020063|ENSCAFG00000013316" output_run2.txt 
+  958  clear
+  959  egrep "ENSG00000077380|ENSMUSG00000027012|ENSCAFG00000012696" output_run2.txt 
+  960  clear
+  961  egrep "ENSG00000138078|ENSMUSG00000024127|ENSCAFG00000002543" output_run2.txt 
+  962  clear
+  963  egrep "ENSG00000126746|ENSMUSG00000038346|ENSCAFG00000014740" output_run2.txt 
+  964  egrep "ENSG00000139793|ENSMUSG00000022139|ENSCAFG00000005523" output_run2.txt 
+  965  clear
+  966  egrep "ENSG00000139793|ENSMUSG00000022139|ENSCAFG00000005523" output_run2.txt 
+  967  clear
+  968  egrep "ENSG00000141447|ENSMUSG00000044252|ENSCAFG00000014108" output_run2.txt 
+  969  clear
+  970  egrep "ENSG00000166681|ENSMUSG00000046432|ENSCAFG00000024178" output_run2.txt 
+  971  clear
+  972  egrep "ENSG00000183570|ENSMUSG00000001120|ENSCAFG00000011907" output_run2.txt 
+  973  clear
+  974  egrep "ENSG00000134533|ENSMUSG00000030222|ENSCAFG00000012854" output_run2.txt 
+  975  clear
+  976  egrep "ENSG00000010810|ENSMUSG00000019843|ENSCAFG00000003995" output_run2.txt 
+  977  clear
+  978  egrep "ENSG00000198728|ENSMUSG00000025223|ENSCAFG00000010005" output_run2.txt 
+  979  clear
+  980  egrep "ENSG00000165406|ENSMUSG00000025702|ENSCAFG00000006879" output_run2.txt 
+  981  clear
+  982  egrep "ENSG00000081026|ENSMUSG00000052539|ENSCAFG00000013122" output_run2.txt 
+  983  clear
+  984  egrep "ENSG00000075711|ENSMUSG00000022770|ENSCAFG00000013275" output_run2.txt 
+  985  clear
+  986  egrep "ENSG00000134138|ENSMUSG00000027210|ENSCAFG00000008498" output_run2.txt 
+  987  clear
+  988  egrep "ENSG00000029363|ENSMUSG00000037608|ENSCAFG00000000245" output_run2.txt 
+  989  clear
+  990  egrep "ENSG00000122877|ENSMUSG00000037868|ENSCAFG00000013049" output_run2.txt 
+  991  clear
+  992  egrep "ENSG00000122566|ENSMUSG00000004980|ENSCAFG00000002885" output_run2.txt 
+  993  clear
+  994  egrep "ENSG00000114993|ENSMUSG00000034930|ENSCAFG00000008519" output_run2.txt 
+  995  exit
+  996  gephi 
+  997  exit
+  998  cluster
+  999  exit
+ 1000  history > history.txt
