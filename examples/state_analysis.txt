@@ -1,0 +1,113 @@
+# This file is a history of the analysis done on the set of 2,167 genes analysis:
+
+## On the human data: data are contain in test_human_complete_2167_genes:
+
+niguilla@raptor:~/Documents/Software/gtf_validator_of_cgalcode_prediction/examples/test_human_complete_2167_genes$ python3 ../../bin/gtf_CGalcode_generator_and_validator_predictions.py -gtf2bed ../../dependencies/gtf2bed.pl -rep ../genes_one2one_hs_mm_clf_with_at_least_2_CCDS/human/ -c ../output_cgalcode_total_genes-hs-mm-clf-2019-03-13/transcripts_hs_withprediction_final.csv  -set ../set_genes/set_human_complete.txt -ref ../reference_gtf/human/ensembl/Ensembl_Homo_sapiens.GRCh38.96.gtf 
+########################################
+########## PROGRAMM BEGINNING ##########
+
+>>> Directory containing genes and transcripts files: True
+>>> File containing genes and transcripts correspondance: True
+>>> File containing the list of genes of interest: True
+>>> GTF reference file to check predictions: True
+
+>>> Creation: a gtf file with all information (Ensembl, prediction)
+>>> Creation: gtf Ensembl files for each gene
+>>> Creation: a gtf file with all Ensembl information
+Number of empty gene without Ensembl ref: 0
+>>> Creation: gtf prediction files for each gene
+>>> Creation: a gtf file with all prediction information
+Number of empty gene without prediction: 1207
+>>> Creation: gtf reference files for each gene
+Number of empty gene without reference: 0
+
+>>> Conservation of genes of interest
+Number of genes with predicted transcripts conserved: 2167/2167
+Number of ref genes conserved: 2167/58883
+Number of ens genes conserved: 2167/2167
+Number of ref transcripts conserved: 29484
+Number of ens transcripts used by CGAlcode: 8374
+Number of pred transcripts to check: 1540
+
+>>> Convertion GTF to BED12
+>>> BedTools intersect analysis
+Number of validate transcript:
+162
+
+############ PROGRAMM ENDING ############
+#########################################
+
+## On the mouse data: data are contain in test_mouse_complete_2167_genes:
+
+niguilla@raptor:~/Documents/Software/gtf_validator_of_cgalcode_prediction/examples/test_mouse_complete_2167_genes$ python3 ../../bin/gtf_CGalcode_generator_and_validator_predictions.py -gtf2bed ../../dependencies/gtf2bed.pl -rep ../genes_one2one_hs_mm_clf_with_at_least_2_CCDS/mouse/ -c ../output_cgalcode_total_genes-hs-mm-clf-2019-03-13/transcripts_mm_withprediction_final.csv  -set ../set_genes/set_mouse_complete.txt -ref ../reference_gtf/mouse/ensembl/Mus_musculus.GRCm38.96.gtf 
+########################################
+########## PROGRAMM BEGINNING ##########
+
+>>> Directory containing genes and transcripts files: True
+>>> File containing genes and transcripts correspondance: True
+>>> File containing the list of genes of interest: True
+>>> GTF reference file to check predictions: True
+
+>>> Creation: a gtf file with all information (Ensembl, prediction)
+>>> Creation: gtf Ensembl files for each gene
+>>> Creation: a gtf file with all Ensembl information
+Number of empty gene without Ensembl ref: 0
+>>> Creation: gtf prediction files for each gene
+>>> Creation: a gtf file with all prediction information
+Number of empty gene without prediction: 1054
+>>> Creation: gtf reference files for each gene
+Number of empty gene without reference: 0
+
+>>> Conservation of genes of interest
+Number of genes with predicted transcripts conserved: 2167/2167
+Number of ref genes conserved: 2167/55535
+Number of ens genes conserved: 2167/2167
+Number of ref transcripts conserved: 19329
+Number of ens transcripts used by CGAlcode: 6511
+Number of pred transcripts to check: 2112
+
+>>> Convertion GTF to BED12
+>>> BedTools intersect analysis
+Number of validate transcript:
+294
+
+############ PROGRAMM ENDING ############
+#########################################
+
+## On the dog data: data are contain in test_dog_complete_2167_genes:
+
+niguilla@raptor:~/Documents/Software/gtf_validator_of_cgalcode_prediction/examples/test_dog_complete_2167_genes$ python3 ../../bin/gtf_CGalcode_generator_and_validator_predictions.py -gtf2bed ../../dependencies/gtf2bed.pl -rep ../genes_one2one_hs_mm_clf_with_at_least_2_CCDS/dog/ -c ../output_cgalcode_total_genes-hs-mm-clf-2019-03-13/transcripts_with_prediction/transcripts_clf_withprediction.csv  -set ../set_genes/set_dog_complete.txt -ref ../reference_gtf/dog/ensembl/Canis_familiaris.CanFam3.1.96.gtf 
+########################################
+########## PROGRAMM BEGINNING ##########
+
+>>> Directory containing genes and transcripts files: True
+>>> File containing genes and transcripts correspondance: True
+>>> File containing the list of genes of interest: True
+>>> GTF reference file to check predictions: True
+
+>>> Creation: a gtf file with all information (Ensembl, prediction)
+>>> Creation: gtf Ensembl files for each gene
+>>> Creation: a gtf file with all Ensembl information
+Number of empty gene without Ensembl ref: 8
+>>> Creation: gtf prediction files for each gene
+>>> Creation: a gtf file with all prediction information
+Number of empty gene without prediction: 820
+>>> Creation: gtf reference files for each gene
+Number of empty gene without reference: -8
+
+>>> Conservation of genes of interest
+Number of genes with predicted transcripts conserved: 2167/2167
+Number of ref genes conserved: 2167/32703
+Number of ens genes conserved: 2167/2167
+Number of ref transcripts conserved: 3240
+Number of ens transcripts used by CGAlcode: 3222
+Number of pred transcripts to check: 3182
+
+>>> Convertion GTF to BED12
+>>> BedTools intersect analysis
+Number of validate transcript:
+1
+
+############ PROGRAMM ENDING ############
+#########################################
+
