@@ -1,0 +1,4 @@
+0 no_evidence "not validated some specific junctions found or none"
+1 annotation "predicted transcript found in another database"
+2 all_junction_known "no specific junction in the transcript"
+3 specific_junction_in_reads "all specific junctions found with reads data"
