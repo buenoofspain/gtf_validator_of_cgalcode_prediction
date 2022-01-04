@@ -1,0 +1,24 @@
+'ENSMUSG00000036940': {
+'[A<>B<>D<>E<>F<>G<>H<>I<>K<>L<>M<>N<>O<>P<>Q<>R<>S<>T<>U]': ['ENSMUST00000116273'], 
+'[A<>B<>C<>D<>E<>F<>G<>H<>I<>K<>L<>M<>N<>O<>P<>Q<>R<>S<>T<>U]': ['ENSMUST00000105847'], 
+'[A<>B<>C<>D<>E<>F<>G<>H<>I<>J<>K<>L<>M<>N<>O<>P<>Q<>R<>S<>T<>U]': ['CGAMUSTENST00000400181'], 
+
+'[A<>B<>D<>E<>F<>G<>H<>I<>L<>M<>N<>O<>P<>Q<>R<>S<>T<>U<>VW]': ['ENSMUST00000116273'], 
+'[A<>B<>C<>D<>E<>F<>G<>H<>I<>L<>M<>N<>O<>P<>Q<>R<>S<>T<>U<>VW]': ['ENSMUST00000105847'], 
+'[A<>B<>C<>D<>E<>F<>G<>H<>I<>J<>L<>M<>N<>O<>P<>Q<>R<>S<>T<>U<>VW]': ['CGAMUSTENST00000400181']}, 
+
+
+
+GA ENSMUSG00000036940 0 [A<.>B<.>C<.>D<.>E<.>F<.>G<.>H<.>I<.>J<.>K<.>L<.>M<.>N<.>O<.>P<.>Q<.>R<.>S<.>T<.>U]
+GO ENSMUSG00000036940 0 [A<.>B<.>C<.>D<.>E<.>F<.>G<.>H<.>I<.>J<.>K<.>L<.>M<.>N<.>O<.>P<.>Q<.>R<.>S<.>T<.>U]
+GE ENSMUSG00000036940 0 [A<.>B<.>C<.>D<.>E<.>F<.>G<.>H<.>I<.>J<.>K<.>L<.>M<.>N<.>O<.>P<.>Q<.>R<.>S<.>T<.>U]
+GF ENSMUSG00000036940 0 [A<.>B<.>C<.>D<.>E<.>F<.>G<.>H<.>I<.>J<.>K<.>L<.>M<.>N<.>O<.>P<.>Q<.>R<.>S<.>T<.>U]
+
+
+GA ENSMUSG00000036940 0 [A<.>B<.>C<.>D<.>E<.>F<.>G<.>H<.>I<.>J<.>L<.>M<.>N<.>O<.>P<.>Q<.>R<.>S<.>T<.>U<.>VW]
+GO ENSMUSG00000036940 0 [A<.>B<.>C<.>D<.>E<.>F<.>G<.>H<.>I<.>J<.K>L<.>M<.>N<.>O<.>P<.>Q<.>R<.>S<.>T<.>U<.>V]W]
+GE ENSMUSG00000036940 0 [A<.>B<.>C<.>D<.>E<.>F<.>G<.>H<.>I<.>J<.K>L<.>M<.>N<.>O<.>P<.>Q<.>R<.>S<.>T<.>U<.>V]W]
+GF ENSMUSG00000036940 0 [A<.>B<.>C<.>D<.>E<.>F<.>G<.>H<.>I<.>J<.K>L<.>M<.>N<.>O<.>P<.>Q<.>R<.>S<.>T<.>U<.>V]W]
+
+
+COA ENSCAFG00000013361 ENSCAFT00000021220 Correct-ORF-CN ['Bad stop codon ATG']
